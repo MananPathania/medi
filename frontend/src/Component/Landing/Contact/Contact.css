@@ -1,0 +1,99 @@
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   /* push content from top */
+    min-height: 100vh;
+    padding: 120px 20px 40px;      /* top padding moves form lower */
+    background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+    box-sizing: border-box;
+}
+
+/* ===== FORM ===== */
+form {
+    max-width: 600px;
+    width: 100%;
+    padding: 25px;
+    background-color: rgb(243, 234, 234);
+    border-radius: 8px;
+    margin: 24px auto;             /* center horizontally */
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+form h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* INPUT BOXES */
+form .input-box {
+    margin-top: 20px;
+}
+
+form .input-box .field {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form .input-box .field.mess {
+    height: 200px;
+    resize: none;
+}
+
+/* BUTTON */
+form button {
+    height: 55px;
+    width: 90%;
+    display: block;
+    margin: 25px auto 0;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(127, 127, 196);
+    color: white;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+form button:hover {
+    background-color: rgb(90, 90, 170);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    sign {
+        padding: 60px 15px 30px;   /* less top padding for mobile */
+        min-height: 80vh;
+        justify-content: flex-start;
+    }
+
+    form {
+        padding: 20px;
+        margin: 120px auto;        /* center horizontally */
+    }
+
+    form h2 {
+        font-size: 24px;
+    }
+
+    form .input-box .field {
+        height: 45px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    form .input-box .field.mess {
+        height: 150px;
+    }
+
+    form button {
+        height: 50px;
+        width: 100%;
+        font-size: 15px;
+    }
+}

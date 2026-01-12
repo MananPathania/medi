@@ -1,0 +1,123 @@
+
+.doctor-section {
+    padding: 180px 20px 60px 20px; 
+    background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+    text-align: center;
+}
+
+.doctor-section .text h1 {
+    font-size: 36px;
+    color: #0072ff;
+    margin-bottom: 20px;
+}
+
+.doctor-section .text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.Doctor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.doctor-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doctor-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.doctor-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.doctor-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    max-width: 180px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 114, 255, 0.3);
+ 
+    transition: all 0.3s ease;
+}
+
+.doctor-card button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 114, 255, 0.5);
+    background: linear-gradient(135deg, #0072ff, #005ecb);
+}
+
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 1024px) {
+    .doctor-card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .doctor-section {
+        padding: 220px 20px 60px 20px; 
+    }
+
+    .doctor-section .text h1 {
+        font-size: 28px;
+        margin-bottom: 20px; 
+    }
+
+    .doctor-section .text p {
+        font-size: 16px;
+        margin-bottom: 30px; 
+    }
+
+    .doctor-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .doctor-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .doctor-card button {
+        max-width: 100%;
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+}

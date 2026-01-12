@@ -1,0 +1,160 @@
+/* ===== MISSION SECTION ===== */
+.mission {
+  padding: 40px;
+  background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* ensures image & text stack on small screens */
+}
+
+.mission-img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-bottom: 240px;
+}
+
+/* ABOUT TEXT */
+.about-text {
+  flex: 1 1 300px; /* grows/shrinks responsively */
+  padding: 80px;
+  font-size: 20px;
+  color: black;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+.about-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: blue;
+  font-weight: bold;
+}
+
+.about-text p {
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.learn {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 18px;
+  background-color: blue;
+  color: white;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* WORK SECTION */
+.work {
+  background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+  padding: 40px 20px;
+  text-align: center;
+  color: blue;
+  font-size: 20px;
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: black;
+}
+
+/* STEPS CARDS */
+.step1, .step2, .step3 {
+  background-color: rgb(241, 248, 249);
+  color: black;
+  padding: 25px;
+  margin: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(202, 198, 198);
+  width: 100%;
+  max-width: 340px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.step1 img, .step2 img, .step3 img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.step1 h3, .step2 h3, .step3 h3 {
+  font-size: 22px;
+}
+
+.step1 p, .step2 p, .step3 p {
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+.step1:hover, .step2:hover, .step3:hover {
+  background-color: rgb(241, 229, 229);
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .mission {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-img {
+    padding: 5px;
+    max-width: 240px;
+    margin-top: 150px;
+  }
+
+  .about-text {
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  .about-text h1 {
+    font-size: 36px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .mission {
+    padding: 20px;
+  }
+
+  .mission-img {
+    max-width: 260px;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .about-text h1 {
+    font-size: 28px;
+  }
+
+  .learn {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+  .step1, .step2, .step3 {
+    max-width: 100%;
+  }
+}
