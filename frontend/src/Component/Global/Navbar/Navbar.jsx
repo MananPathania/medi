@@ -12,7 +12,7 @@ function Navbar() {
 
               <div className='logo'>
               
-                <img src= 'logo.png' height={"80%"} width={"20%"} ></img>
+                <img src= 'logo.png' height={"60%"} width={"20%"} ></img>
                  
                 
 

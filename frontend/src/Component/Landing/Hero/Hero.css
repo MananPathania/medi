@@ -4,9 +4,7 @@
   justify-content: space-around;
   height: 100vh;
 
-  background:linear-gradient(135deg, #b3e3ff 0%, #ecedef 100%);
-   
-   
+  background: linear-gradient(135deg, #e0f2fe, #bfdbfe, #c7d2fe);
 }
 .hero-img{
 
@@ -17,7 +15,7 @@
   background-size: 70%;
   background-position: right ;
   
-  background-image: url(./dr.png);
+  background-image: url('/dr.png');
   margin-left: 80px;
 
   
@@ -35,7 +33,7 @@
 }
 span{
 
-  color: blue;
+  color: blue ;
   font-weight: bold;
   font-size: 40px;
   animation: slideIn 2s ease-out alternate ;
@@ -140,3 +138,4 @@ button{
    
   }
 }
+ 
