@@ -8,7 +8,7 @@ import Doctor from "./Component/Landing/Doctor/Doctor";
 import Contactform from './Component/Landing/Contact/Contactform';
 import AI from './Component/Landing/AI/AI';
 import Portfolio from './Component/Landing/Portfolio/Portfolio';
-
+import Appointment from './Component/Landing/Hero/Appointment/Appointment';
 
 
 
@@ -28,7 +28,8 @@ function App() {
       <Route path="/Portfolio" element={<Portfolio/>}/>
 
         <Route path="/AI" element={<AI/>}/>
-
+       <Route path="/Appointment" element={<Appointment/>}/>
+      
         
      
 
